@@ -15,7 +15,7 @@ app.get('/triangle', (req, res) => {
   const sideC = parseFloat(c);
 
   if(isNaN(sideA) || isNaN(sideB) || isNaN(sideC)) {
-    return res.status(500).send('The sides have to be number');
+    return res.status(500).send('The value of the side must be a number');
   }
 
   if(sideA === sideB && sideB === sideC) {
