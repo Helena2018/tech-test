@@ -19,11 +19,11 @@ app.get('/triangle', (req, res) => {
   }
 
   if(sideA === sideB && sideB === sideC) {
-    return res.send('This is a Equilateral!');
+    return res.send('EQUILATERAL');
   } else if(sideA === sideB || sideA === sideC || sideB === sideC) {
-    return res.send('This is a Isoceles!');
+    return res.send('ISOCELES ');
   } else {
-    return res.send('This is a Scalene!');
+    return res.send('SCALENE');
   }
 })
 
